@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class="bg-primary text-white text-center py-4">
+        <h1>My Portfolio</h1>
+    </header>
+    <div class="container mt-4">
+        <nav class="mb-4">
+            <button class="btn btn-secondary" onclick="scrollToSection('about')">About Me</button>
+            <button class="btn btn-secondary" onclick="scrollToSection('personal-details')">Personal Details</button>
+            <button class="btn btn-secondary" onclick="scrollToSection('projects')">Projects</button>
+        </nav>
+        <section id="about" class="mb-4">
+            <h2>About Me</h2>
+            <p>Hello! I’m Malyala Pujan, a passionate web developer with experience in creating beautiful and functional websites. I love solving problems and building projects that make a difference.</p>
+        </section>
+        <section id="personal-details" class="mb-4">
+            <h2>Personal Details</h2>
+            <ul class="list-group">
+                <li class="list-group-item"><strong>Name:</strong> Pujanmalyala</li>
+                <li class="list-group-item"><strong>Email:</strong> pujanmalyala@gmail.com</li>
+                <li class="list-group-item"><strong>Phone:</strong> 9121652540</li>
+                <li class="list-group-item"><strong>Location:</strong> Suryapet, India</li>
+            </ul>
+            <button class="btn btn-primary mt-3" onclick="updateFile()">Update Details</button>
+        </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h3 class="card-title">Project One</h3>
+                            <p class="card-text">Railway reservation system using HTML, JavaScript, and CSS.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h3 class="card-title">Project Two</h3>
+                            <p class="card-text">An e-commerce website with responsive design and secure payment integration.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h3 class="card-title">Project Three</h3>
+                            <p class="card-text">A personal blog built with HTML, CSS, and JavaScript.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer class="bg-dark text-white text-center py-3 mt-4">
+        <p>&copy; 2025 My Portfolio. All rights reserved.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function updateFile() {
+            alert("Update functionality will be implemented here.");
+        }
+        function scrollToSection(id) {
+            document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
